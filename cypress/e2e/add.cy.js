@@ -1,7 +1,8 @@
-const add = (a, b) => a + b;
-
-describe("add function test", () => {
-  test("adds 1 + 2 to equal 3", () => {
-    expect(add(1, 2)).toBe(3);
+describe("Addition Test Suite", () => {
+  it("adds two numbers correctly", () => {
+    const num1 = 5;
+    const num2 = 7;
+    const expectedSum = num1 + num2;
+    expect(expectedSum).to.equal(12);
   });
 });
